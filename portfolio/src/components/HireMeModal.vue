@@ -2,7 +2,7 @@
 import feather from "feather-icons";
 import Button from "./reusable/ButtonUI.vue";
 import FormInput from "./reusable/FormInput.vue";
-import FormTextarea from "./reusable/FormTextArea.vue"
+import FormTextarea from "./reusable/FormTextarea.vue"
 export default {
   props: ["showModal", "modal", "categories"],
   components: { Button, FormInput, FormTextarea },

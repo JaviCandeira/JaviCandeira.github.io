@@ -74,12 +74,12 @@ export default {
                     <router-link to="/"
 						><img
 							v-if="theme === 'light'"
-							src="@/assets/images/logo-light.png"
+							src="@/assets/images/logo-dark.png"
 							style="width: 50px; height: 50px;"
 
 							alt="Dark Logo"
 						/>
-						<img
+						<img 
 							v-else
 							src="@/assets/images/logo-light.png"
 							class="w-36"

@@ -6,57 +6,48 @@ const routes = [
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: 'Stoman - Home',
+			title: 'Portfolio - Home',
 		},
 	},
 	{
 		path: '/about',
 		name: 'About',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/About.vue'),
+			import(
+				'../views/About.vue'),
 		meta: {
-			title: 'Stoman - About',
+			title: 'Portfolio - About',
 		},
 	},
 	{
 		path: '/projects',
 		name: 'Projects',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
+			import(
+				'../views/Projects.vue'),
 		meta: {
-			title: 'Stoman - Projects',
+			title: 'Portfolio - Projects',
 		},
 	},
 	{
 		path: '/projects/single-project',
 		name: 'Single Project',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(
-				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
+				'../views/SingleProject.vue'
 			),
 		meta: {
-			title: 'Stoman - Single Project',
+			title: 'Portfolio - Single Project',
 		},
 	},
 	{
 		path: '/contact',
 		name: 'Contact',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
+			import(
+				'../views/Contact.vue'),
 		meta: {
-			title: 'Stoman - Contact',
+			title: 'Portfolio - Contact',
 		},
 	},
 ];
@@ -73,7 +64,6 @@ export default router;
 
 /**
  * Below code will display the component/active page title
- * Powered by: Nangialai Stoman
  */
 
 // This callback runs before every route change, including on page load.
